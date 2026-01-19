@@ -1,5 +1,7 @@
 # shidiscript docs.
-shidiscript is a small scripting langauge i made for fun. This will probably never get any practical use outside of my small programming circle
+shidiscript is a small scripting langauge i made for fun. This will probably never get any practical use outside of my small programming circle<br><br>
+whats this? a programming language worse than TI-BASIC?<br>
+how could've this happened?
 
 pros
 * idk its cool?
