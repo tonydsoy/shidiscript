@@ -276,3 +276,10 @@ variable integer end 50
 random vv start end result
 // generate a random number 30-50 and place it in 'result'
 ```
+
+## lowerstring & upperstring
+
+command takes one arugment<br>
+argument must be an existing variable of type `string`<br>
+upperstring will uppercase all characters on variable's value<br>
+lowerstring will lowercase all characters on variable's value

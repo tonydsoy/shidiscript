@@ -332,6 +332,34 @@ while ptr < len(program):
                 found = True
         if found == False:
             shidierr("random","value",f"cannot find variable '{parts[4]}'",ptr)
+    elif line.startswith("lowerstring "):
+        parts = line.split(" ")
+        found = False
+        for v in variables:
+            if v[0] == parts[1]:
+                found = True
+                if v[2] == 0:
+                    if type(v[1]) == str:
+                        v[1] = v[1].lower()
+                else:
+                    shidierr("lowerstring","type",f"variable '{parts[1]}' is not a string",ptr)
+        if found == False:
+            shidierr("lowerstring","value",f"cannot find variable '{parts[1]}'",ptr)
+    elif line.startswith("upperstring "):
+        parts = line.split(" ")
+        found = False
+        for v in variables:
+            print("hi")
+            if v[0] == parts[1]:
+                found = True
+                if v[2] == 0:
+                    if type(v[1]) == str:
+                        v[1] = v[1].upper()
+                else:
+                    shidierr("upperstring","type",f"variable '{parts[1]}' is not a string",ptr)
+        if found == False:
+            shidierr("upperstring","value",f"cannot find variable '{parts[1]}'",ptr)
+
 
 if developer[0] == True:
     print("\033[0;36mprintvariables variables\033[0m")
